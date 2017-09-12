@@ -4,7 +4,8 @@ applications:
   host: timesheets-pal-nittimesheet
   memory: 1G
   instances: 1
-  env:
-    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-nitesh.apps.longs.pal.pivotal.io
   services:
   - tracker-timesheets-database
+  - tracker-service-registry
+  env:
+    TRUST_CERTS: apps.longs.pal.pivotal.io
